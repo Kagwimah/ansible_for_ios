@@ -1,0 +1,11 @@
+---
+    
+  - name: run multiple commands on remote nodes
+    ios_command:
+      commands: "{{ command_list }}"
+      register: showoutput
+
+  - name: "Put all the files together into one nice text file"
+    template:
+       src: template.j2
+       dest: "~/network-programmability/backups/{{hostvars.localhost.DTG}}/{{ inventory_hostname }}-{{hostvars.localhost.DTG}}-showoutput.txt"

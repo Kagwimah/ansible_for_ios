@@ -1,0 +1,20 @@
+[user@ansible ~]$ ansible-galaxy init system-demo
+[user@ansible ~]$ cd system-demo/
+[user@ansible system-demo]$ tree
+.
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── README.md
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+  └── main.yml

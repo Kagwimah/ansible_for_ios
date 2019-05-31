@@ -1,0 +1,7 @@
+---
+- name: configure cisco routers
+  hosts: gns3
+  connection: network_cli
+  gather_facts: no
+  roles:
+    - dns_role
